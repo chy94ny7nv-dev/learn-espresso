@@ -18,4 +18,20 @@ class menuElements {
             )
         )
     }
+    fun menuNavSlideshow(): ViewInteraction {
+        return onView(withId(R.id.nav_slideshow)
+            )
+    }
+    fun menuNavImage(): ViewInteraction {
+        return onView(withId(R.id.imageView)
+        )
+    }
+    fun menuNavMail(): ViewInteraction {
+        return onView(withText("android.studio@android.com")
+        )
+    }
+    fun menuNavName(): ViewInteraction {
+        return onView(withId(R.id.textView)
+        )
+    }
 }

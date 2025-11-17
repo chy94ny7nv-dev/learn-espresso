@@ -3,6 +3,7 @@ package com.example.myawesomeapp.element
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withParent
 import androidx.test.espresso.matcher.ViewMatchers.withText
@@ -32,6 +33,10 @@ class mainScreenElements {
             withText("Home"),
             withParent(withId(R.id.toolbar))
             )
+        )
+    }
+    fun mainScreenOptions(): ViewInteraction {
+        return onView(withContentDescription("More options")
         )
     }
 }
